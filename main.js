@@ -11,9 +11,9 @@ function createWindow () {
     resizable: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      zoomFactor: 0.2
+      zoomFactor: 0.5
     },
-    icon: path.join(__dirname, './images/tora-ski-768x768.ico'),
+    icon: path.join(__dirname, './images/tora-ski-768x768.ico')
   })
 
   // and load the index.html of the app.
