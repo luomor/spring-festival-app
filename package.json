@@ -1,0 +1,22 @@
+{
+  "name": "spring-festival-app",
+  "version": "1.0.0",
+  "description": "Spring Festival App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/luomor/spring-festival-app",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^16.0.8"
+  }
+}
