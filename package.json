@@ -27,9 +27,9 @@
   },
   "build": {
     "productName": "spring-festival",
-    "appId": "spring-festival",
+    "appId": "com.luomor.spring-festival",
     "mac": {
-      "icon": "./images/tora-ski-768x768.ico"
+      "icon": "./images/tora-ski-768x768.icns"
     },
     "win": {
       "icon": "./images/tora-ski-768x768.ico"

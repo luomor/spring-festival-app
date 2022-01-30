@@ -16,6 +16,8 @@ electron-v16.0.8-darwin-x64.zip
 https://npm.taobao.org/mirrors/electron/v16.0.8/
 
 electron icon
+png to icns
+https://miconv.com/convert-png-to-icns
 
 "build": {
     "productName": "XXX",
