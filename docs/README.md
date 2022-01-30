@@ -1,6 +1,11 @@
 ```shell
 cnpm install --save-dev electron-packager
 npm run package
+
+electron-packager . --platform=all --arch=x64 --overwrite
+electron-packager . --platform=all --arch=x64 --overwrite --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/
+electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore="(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)
+
 ```
 
 ```
@@ -8,6 +13,36 @@ https://cloud.tencent.com/developer/section/1115971
 
 electron-v16.0.8-darwin-x64.zip
 https://npm.taobao.org/mirrors/electron/v16.0.8/
+
+electron icon
+
+"build": {
+    "productName": "XXX",
+    "appId": "XXX",
+    ......  // 因为这篇文章重点讲解图标配置，所以此处省略别的配置代码
+    "mac": {
+      "icon": "./XXX/logo.ico"
+    },
+    "win": {
+      "icon": "./XXX/logo.ico"
+    },
+    "linux": {
+      "icon": "./XXX/logo.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "guid": "idea",
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./XXX/logo.ico",
+      "uninstallerIcon": "./XXX/logo.ico",
+      "installerHeaderIcon": "./XXX/logo.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "idea"
+    }
+  }
 ```
 
 ```

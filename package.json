@@ -5,11 +5,11 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
-    "packageDarwin": "electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
-    "packageDarwin2": "electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0",
-    "packageWin": "electron-packager . 'spring-festival' --platform=win32 --arch=x64 --icon=app.ico --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules)\"",
-    "packageWin2": "electron-packager . 'spring-festival' --platform=win32 --arch=x64 --icon=app.ico --out=./dist --asar --app-version=1.0.0"
+    "package": "electron-packager . 'spring-festival' --platform=darwin --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/ --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
+    "packageDarwin": "electron-packager . 'spring-festival' --platform=darwin --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/ --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
+    "packageDarwin2": "electron-packager . 'spring-festival' --platform=darwin --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/ --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0",
+    "packageWin": "electron-packager . 'spring-festival' --platform=win32 --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/ --arch=x64 --icon=app.ico --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules)\"",
+    "packageWin2": "electron-packager . 'spring-festival' --platform=win32 --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/ --arch=x64 --icon=app.ico --out=./dist --asar --app-version=1.0.0"
   },
   "repository": "https://github.com/luomor/spring-festival-app",
   "keywords": [
@@ -24,5 +24,18 @@
   "devDependencies": {
     "electron": "^16.0.8",
     "electron-packager": "^15.4.0"
+  },
+  "build": {
+    "productName": "spring-festival",
+    "appId": "spring-festival",
+    "mac": {
+      "icon": "./images/tora-ski-768x768.ico"
+    },
+    "win": {
+      "icon": "./images/tora-ski-768x768.ico"
+    },
+    "linux": {
+      "icon": "./images/tora-ski-768x768.ico"
+    }
   }
 }
