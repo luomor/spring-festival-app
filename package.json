@@ -4,7 +4,8 @@
   "description": "Spring Festival App",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "node .electron-vue/build.js && electron-builder"
   },
   "repository": "https://github.com/luomor/spring-festival-app",
   "keywords": [

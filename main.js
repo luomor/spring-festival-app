@@ -6,11 +6,12 @@ function createWindow () {
   // Create the browser window.
   // 2532x1170
   const mainWindow = new BrowserWindow({
-    width: 585,
-    height: 1266,
+    width: 292,
+    height: 633,
     resizable: false,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      zoomFactor: 0.2
     }
   })
 
