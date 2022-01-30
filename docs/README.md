@@ -1,5 +1,13 @@
+```shell
+cnpm install --save-dev electron-packager
+npm run package
+```
+
 ```
 https://cloud.tencent.com/developer/section/1115971
+
+electron-v16.0.8-darwin-x64.zip
+https://npm.taobao.org/mirrors/electron/v16.0.8/
 ```
 
 ```

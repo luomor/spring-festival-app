@@ -1,0 +1,6 @@
+npm run package
+
+> spring-festival-app@1.0.0 package /Users/peterzhang/dev/github/electron-quick-start/spring-festival-app
+> electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore="(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)"
+
+Downloading electron-v16.0.8-darwin-x64.zip: [==------------------------------------------] 4% ETA: 4579.0 seconds

@@ -5,7 +5,11 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "node .electron-vue/build.js && electron-builder"
+    "package": "electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
+    "packageDarwin": "electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config*|node_modules)\"",
+    "packageDarwin2": "electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.icns --out=./dist --asar --app-version=1.0.0",
+    "packageWin": "electron-packager . 'spring-festival' --platform=win32 --arch=x64 --icon=app.ico --out=./dist --asar --app-version=1.0.0 --ignore=\"(dist|src|docs|.gitignore|LICENSE|README.md|webpack.config.js|node_modules)\"",
+    "packageWin2": "electron-packager . 'spring-festival' --platform=win32 --arch=x64 --icon=app.ico --out=./dist --asar --app-version=1.0.0"
   },
   "repository": "https://github.com/luomor/spring-festival-app",
   "keywords": [
@@ -18,6 +22,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^16.0.8"
+    "electron": "^16.0.8",
+    "electron-packager": "^15.4.0"
   }
 }
