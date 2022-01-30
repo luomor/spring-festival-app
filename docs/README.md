@@ -19,6 +19,8 @@ electron icon
 png to icns
 https://miconv.com/convert-png-to-icns
 
+electron-packager icon
+
 "build": {
     "productName": "XXX",
     "appId": "XXX",
