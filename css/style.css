@@ -116,7 +116,7 @@ body {
     width: 100%;
     height: 100%;
     border: 7px double #eeee11;
-    transform: rotate(45deg);
+    /*transform: rotate(45deg);*/
 }
 
 #fu .fu {
