@@ -25,12 +25,17 @@
     "electron": "^16.0.8",
     "electron-packager": "^15.4.0"
   },
-  "config": {
-    "forge": {
-      "packagerConfig": {
-        "packageManager": "npm",
-        "icon": "images/tora-ski-768x768.ico"
-      }
+  "build": {
+    "productName": "spring-festival",
+    "appId": "com.luomor.spring-festival",
+    "mac": {
+      "icon": "./images/tora-ski-768x768.icns"
+    },
+    "win": {
+      "icon": "./images/tora-ski-768x768.ico"
+    },
+    "linux": {
+      "icon": "./images/tora-ski-768x768.ico"
     }
   }
 }
