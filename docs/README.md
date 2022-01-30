@@ -9,6 +9,7 @@ electron-packager . 'spring-festival' --platform=darwin --arch=x64 --icon=app.ic
 ```
 
 ```
+electron BrowserWindow
 https://cloud.tencent.com/developer/section/1115971
 
 electron-v16.0.8-darwin-x64.zip
